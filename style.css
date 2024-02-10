@@ -1,16 +1,16 @@
 .img{
+    padding: auto;
     width: 100px;
     border-radius: 100%;
     border-color: black;
     background-color: blue;
+    
 }
 
-.img{
-    width: 100px;
-    border-radius: 100%;
-    border-color: black;
-    background-color: blue;
+.container{
+    padding: 50px 40%;
 }
+
 
 body{
     background-color: blueviolet;
