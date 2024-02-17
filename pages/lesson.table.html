@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-tables</title>
+    <style>
+        table{
+            border: 1px solid black;
+        }
+
+        th{
+            background-color: aqua;
+        }
+
+        td{
+            border: 1px solid blue;
+        }
+
+    </style>
+</head>
+<body>
+    <p>============= Sample table =================</p>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+       <tbody>
+         <tr>
+            <td>Chamith</td>
+            <td>Kavinda</td>
+            <td>chamith13kavinda@gmail.com</td>
+            <td>Galle</td>
+         </tr>
+         <tr>
+            <td>Dasun</td>
+            <td>Shanaka</td>
+            <td>Dasun@gmail.com</td>
+            <td>Colombo</td>
+         </tr>
+       </tbody>
+       
+    </table> 
+
+    <p>============= Item table =================</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Qty</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ice-Cream</td>
+                <td>8</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>Chocolate</td>
+                <td>2</td>
+                <td>800</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>1800</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>============= Colums dekk merge krpu  table =================</p>
+    <table style="width:  400px; text-align: center;">
+        <tr style="height: 100px;">
+            <td colspan="2">1</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td>5</td>
+            <td colspan="3">6</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td>9</td>
+            <td colspan="2">10</td>
+            <td>12</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td colspan="3">13</td>
+            <td>16</td>
+        </tr>
+    </table>
+
+    <p>============= Raws dekk merge krpu table =================</p>
+
+    <table style="width:  400px; text-align: center;">
+        <tr style="height: 100px;">
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td rowspan="3">6</td>
+            <td>7</td>
+            <td rowspan="3">8</td>
+        </tr>
+        <tr style="height: 100px;">
+            <td rowspan="2">9</td>
+            <td>11</td>
+            
+        </tr>
+        <tr style="height: 100px;">
+            <td>15</td>
+        </tr>
+    </table>
+</body>
+</html>
