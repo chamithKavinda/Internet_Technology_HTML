@@ -25,6 +25,55 @@
             background-color: chartreuse;
         }
 
+        /* 5.Pseudo classes Selector */
+        button:hover{
+            background-color: blue;
+        }
+        
+        /* 6.Pseudo elements */
+        p::before{
+            content: "Read this...........";
+            color: aqua;
+        }
+
+        p::after{
+            content: "end this .........";
+            color: chartreuse;
+        }
+
+        p::first-letter{
+            font-size: 30px;
+        }
+
+        p::first-line{
+            font-weight: bold;
+        }
+
+        /* 7.Desecendent selectors(white space combinator) */
+        div h4{
+            color: aqua;
+        }
+
+        div div h4{
+            color: violet;
+        }
+
+        /* 8.Chiled selector */
+        div > h5{
+            font-weight: bold;
+            color: teal;
+            font-size: 24px;
+        }
+
+        /* Adjacent sibling selector(+) */
+        h2+p{
+            background-color: slateblue;
+        }
+
+        /* 10.General sibling selector */
+        h3~p{
+            background-color: teal;
+        }
     </style>
 </head>
 <body>
@@ -46,13 +95,48 @@
 
     ================ 4.Atribute Selector =============
     <br>
+    <br>
     <input type="text" placeholder="Enter your full Name">
     <br>
     <input type="number" placeholder="Enter your age">
 
+    <br>
+    <br>
     ================ 5.Pseudo classes Selector =============
+    <br>
+    <br>
+    <button>Send</button>
 
-    ================ 5.Pseudo elements =============
+    <br>
+    <br>
+    <br>
+    ================ 6.Pseudo elements =============
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum, recusandae maxime officiis sed repudiandae illo placeat, incidunt sit quia dolor voluptatibus eligendi enim quae quas nam fugit dicta quo sequi.</p>
 
+    ================ 7.Desecendent selectors(white space combinator) =============
+    <div>
+        <div>
+            <h4>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis unde esse iure nihil voluptates magnam velit suscipit numquam quos perspiciatis nemo accusamus ipsam, asperiores facilis illo, quidem voluptate! Repellendus, fuga?
+            </h4>
+        </div>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad dolorem, nesciunt eaque soluta voluptatem nostrum quidem quis voluptates placeat quos? Doloremque sit fugiat quas eligendi culpa aspernatur natus nihil quod.</h4>
+    </div>
+
+    ============ 8.Chiled selector =============
+    <div>
+        <h5>Galle</h5>
+        <h5>Colombo</h5>
+        <h5>Matara</h5>
+        <h5>Kandy</h5>
+    </div>
+
+    ============ 9.Adjacent sibling selector(+) =============
+    <h2>Heading 2</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga provident illum est facilis assumenda obcaecati inventore hic earum tempore iure, dolorem quaerat ab, dolore quam. Excepturi ex harum illum minima?</p>
+
+    ============ 10.General sibling selector =============
+    <h3>Heading 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ipsum odit numquam modi facilis corporis saepe eius asperiores optio quo vel at, quaerat, nihil itaque nostrum soluta nemo provident quae?</p>
 </body>
 </html>
