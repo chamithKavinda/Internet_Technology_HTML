@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-pseudo</title>
+    <style>
+
+        /*------------------------- pesudo classes ------------------------*/
+        button{
+            background-color: black;
+            color: beige;
+            border: 0cap;
+        }
+
+        button:hover{
+            background-color: cyan;
+            cursor: pointer; 
+           /* cursor: progress; zoom in , zoom out also can*/
+        }
+
+        button:active{
+            background-color: blueviolet;
+        }
+
+        li:first-child{
+            color: tomato;
+        }
+
+        li:nth-child(3){
+            color: yellow;
+        }
+
+        /*------------------------- pesudo Elements ------------------------*/
+        p::before{
+            content: "Read this...........";
+            color: aqua;
+        }
+
+        p::after{
+            content: "end this .........";
+            color: chartreuse;
+        }
+
+        p::first-letter{
+            font-size: 30px;
+        }
+
+        p::first-line{
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Lesson Pseudo</h1>
+
+    <h2>============Pseudo classes==============</h2>
+
+    <button>Click Here</button>
+
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Skills</li>
+        <li>About</li>
+    </ul>
+
+    <h2>============Pseudo elements==============</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat neque modi, vero, at, doloribus minima consectetur consequuntur atque voluptatum totam commodi voluptates ea quidem quo perspiciatis ducimus veritatis adipisci sed?</p>
+</body>
+</html>
