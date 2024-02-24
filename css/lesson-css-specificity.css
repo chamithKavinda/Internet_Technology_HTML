@@ -1,0 +1,52 @@
+p{
+    color: black;
+}
+
+.content{
+    color:brown;
+}
+
+#content-id{
+    color: red;
+}
+
+div h4{
+    color: chartreuse;
+}
+
+div .card-title{
+    color: chocolate;
+    font-weight:500 ;
+    font-size: 70px;
+}
+
+.card-content{
+    color: turquoise;
+
+}
+
+#card-Id #card-title-id{
+    color: red;
+}
+
+.card .card-title{
+    color: blue;
+}
+
+/* 
+element strength
+
+element - 0001
+class - 0010
+ID - 0100
+Inline - 1000
+
+Higher strenth
+
+1. one element + one id   
+2. ID   
+3. one element one class
+4. 1 class
+5. 2 element 
+6.one element
+*/
