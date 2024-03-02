@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-css-Units</title>
+    <style>
+        .box{
+            background-color: blue;
+            border: 1px solid;
+            height: 100px;
+            margin-top: 5%;
+        }
+
+        .box-pixels{
+            /* using pixels */
+            width: 200px;
+        }
+
+        .box-persentage{
+            width: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-pixels">pixels</div>
+    <div class="box box-persentage"></div>persentage</div>
+    <hr>
+    <div style="width: 400px; height: 400px; background-color: yellow;">
+        <div style="width: 1vw; height: 100px; background-color: blue;"></div>
+        <div style="width: 1vh; height:50% ; background-color: aqua;"></div>
+        <div style="width: 1vh; height: 50%;"></div>
+    </div>
+    <hr>
+    <div style="width: 1vh; height:50% ; background-color: aqua;"></div>
+        <div style="width: 1vh; height: 50%;"></div>
+    <hr>
+
+    <!-- ============rem================= -->
+    <div style="font-size: 1rem;">hello world</div>
+    <div style="font-size: 2rem;">hello world</div>
+    <div style="font-size: 3rem;">hello world</div>
+    
+    <!-- =================== em ===================== -->
+    <div style="font-size: 10px;">hello world</div>
+    <div style="font-size: 20px;">hello world</div>
+    <div style="font-size: 30px;">hello world</div>
+</body>
+</html>
