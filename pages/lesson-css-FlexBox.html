@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson-css-FlexBox</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: aqua;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 60px;
+        }
+
+        .box1{
+            background-color: blue;
+        }
+
+        .box2{
+            background-color: yellow;
+        }
+
+        .box3{
+            background-color: tomato;
+        }
+
+        .box4{
+            background-color: blueviolet;
+        }
+
+        .container{
+             display: flex;
+             flex-direction:column;
+             border: 10px solid black;
+             height: 500px;
+
+          
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+            /* justify-content: flex-start; --by default -alihn on the main axis */
+
+            /* justify-self: start; */
+            /* justify-self:flex-end; */
+            /* justify-content:center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            /* align-items: center; */
+            /* align-items:flex-start ; */
+            /* align-items: flex-end; */
+
+            flex-wrap: wrap;
+
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            align-content: center;
+            /* row-gap: 12px;
+            column-gap: 12px; */
+            gap: 12px;
+
+            
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box1">5</div>
+        <div class="box box2">6</div>
+        <div class="box box3">7</div>
+        <div class="box box4">8</div>
+        <div class="box box1">9</div>
+        <div class="box box2">10</div>
+    
+    </div>
+    
+</body>
+</html>
