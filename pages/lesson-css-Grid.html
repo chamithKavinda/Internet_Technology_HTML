@@ -6,7 +6,9 @@
     <title>lesson-css-Grid</title>
     <style>
         .container{
-            
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 12px ;
         }
 
         .box{
@@ -14,16 +16,20 @@
             padding: 5px;
             border: 1px solid black;
         }
+
+        .box1{
+            grid-column: 1;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">box1</div>
-        <div class="box">box2</div>
-        <div class="box">box3</div>
-        <div class="box">box4</div>
-        <div class="box">box5</div>
-        <div class="box">box6</div>
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+        <div class="box box5">box5</div>
+        <div class="box box6">box6</div>
     </div>
 </body>
 </html>
