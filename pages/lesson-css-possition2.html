@@ -5,15 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lesson-css-position2</title>
     <style>
-        .box{
-            width: 300px;
-            height: 300px;
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 1px solid black;
+
+             position: fixed;
+            top: 0;
+            left: 0; 
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
             background-color: blue;
-            border: 1px solid;
+            border: 1px solid green;
+
+            position: absolute;
+            top: 50px;
+            left: 50px;
         }
     </style>
 </head>
 <body>
-    <div class="box"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt tempora, odit quaerat voluptatum at natus recusandae autem assumenda, incidunt vel blanditiis harum. Sapiente quod molestias iusto adipisci obcaecati odio eligendi perferendis nam unde molestiae consectetur recusandae, atque quo repudiandae aliquid cumque dolorum delectus? Cum, aperiam nam similique, optio pariatur odit expedita maiores delectus magni libero natus! Iusto pariatur veniam dolore!</p>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    
 </body>
 </html>
