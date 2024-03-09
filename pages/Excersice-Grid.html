@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excersice-Grid-Layout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr) ;
+        }
+
+        .container > div{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        .container > div:nth-child(even){
+            background-color: aqua;
+        }
+        
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .nested>div{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div class="nested">
+            <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        </div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+</body>
+</html>

@@ -6,9 +6,27 @@
     <title>lesson-css-Grid-Layout</title>
     <style>
         .container{
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3,1fr) ;
         }
 
+        .container > div{
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        /* .container > div:nth-child(even){
+            background-color: aquamarine;
+        } */
+
+        .nested{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .nested>div{
+            border: 1px solid black;
+            padding: 8px;
+        }
     </style>
 </head>
 <body>
@@ -16,18 +34,28 @@
         <div>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dicta in maiores quia officia eaque quod eius iste optio enim dolores, eos dolorum totam, ex eligendi molestias, repellat pariatur tenetur!
         </div>
+        
         <div>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dicta in maiores quia officia eaque quod eius iste optio enim dolores, eos dolorum totam, ex eligendi molestias, repellat pariatur tenetur!
+            
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dicta in maiores quia officia eaque quod eius iste optio enim dolores, eos dolorum totam, ex eligendi molestias, repellat pariatur tenetur!
+            
         </div>
         <div>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dicta in maiores quia officia eaque quod eius iste optio enim dolores, eos dolorum totam, ex eligendi molestias, repellat pariatur tenetur!
         </div>
+        <div class="nested">
+            <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        </div>
+       
         <div>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dicta in maiores quia officia eaque quod eius iste optio enim dolores, eos dolorum totam, ex eligendi molestias, repellat pariatur tenetur!
         </div>
-        <div>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dicta in maiores quia officia eaque quod eius iste optio enim dolores, eos dolorum totam, ex eligendi molestias, repellat pariatur tenetur!
-        </div>
+        
     </div>
 </body>
 </html>
