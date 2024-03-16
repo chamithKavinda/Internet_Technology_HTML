@@ -1,0 +1,198 @@
+body{
+    background-image: url(assest/home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: beige;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0px 2%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo{
+    width: 100px;
+    height: 70 px;
+    margin-top: 20px;
+    border-radius: 50%;
+    margin-left: 80px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 40px;
+
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+
+
+nav ul li a:hover{
+    color: blue;
+}
+
+
+.header-text h2{
+    margin-top: -300px;
+   margin-left: 80px;
+   font-size: 40px;
+}
+
+.header-text h1{
+    margin-left: 80px;
+    font-size: 40px;
+ }
+
+.header-text h1 span{
+    font-size: 60px;
+    color: blue;
+}
+
+.header-text p{
+    margin-left: 80px;
+    margin-top: 10px;  
+}
+
+.homeImage{
+    height: 400px;
+    margin-left: 950px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.git{
+    margin-left: 80px;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.email{
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.linkedin{
+    height: 40px;
+    margin-left: 20px; 
+}
+
+
+
+
+#About{
+    margin-left: 0%;
+    margin-top: 5%;
+    color: black;
+    flex-basis: 60%;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.sub-title-1{
+    margin-left: 500px;
+    margin-top: 20px;
+}
+
+.About-list {
+    display: grid;
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: 10%;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr); 
+    justify-self: center;
+    margin-left: 0%;
+}
+
+.About-list div {
+    background-color: yellow;
+    padding: 50px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.About-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.About-list div a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-top: 250px;
+    display: inline-block;
+}
+
+.About-list div:hover {
+    transform: translateY(-10px);
+    opacity: 0.5;
+}
+
+.Java{
+    width: 60px;
+}
+
+.JS{
+    width: 60px;
+}
+
+.Figma{
+    width: 60px;
+}
+
+.Photoshop{
+    width: 60px;
+}
+
+.Php{
+    width: 60px;
+}
+.Mysql{
+    width: 60px;
+}
+
+.C{
+    width: 60px;
+}
+
+.Python{
+    width: 60px;
+}
