@@ -3,7 +3,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 200vh;
     margin: 0;
     padding: 0;
 }
@@ -135,12 +135,11 @@ nav ul li a:hover{
 }
 
 .About-list div {
-    background-color: yellow;
+    background-color: blue;
     padding: 50px;
     font-size: 13px;
     font-weight: 300;
     border-right: 10px;
-    transition: background 0.5s, transform 0.5s;
     background-size: cover;
     background-position: center;
 }
@@ -151,6 +150,7 @@ nav ul li a:hover{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    color: aliceblue;
 }
 
 .About-list div a {
@@ -161,10 +161,6 @@ nav ul li a:hover{
     display: inline-block;
 }
 
-.About-list div:hover {
-    transform: translateY(-10px);
-    opacity: 0.5;
-}
 
 .Java{
     width: 60px;
