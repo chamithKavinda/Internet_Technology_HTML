@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Media-Quaries</title>
+    
+    <style>
+      .card {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        min-width: 200px;
+      }
+
+      .star {
+        width: 30px;
+        height: 30px;
+      }
+
+      .img-star-holder {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+      }
+
+      .par-holder {
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: yellow;
+        margin-top: 20px;
+        border: 2px solid black;
+      }
+
+      .cus-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 180px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .card-holder {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(6, 1fr);
+      }
+
+      @media (min-width: 1200px) {
+        .card-holder {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 1199px) {
+        .card-holder {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+
+      @media  screen and (max-width: 991px) {
+        .card-holder {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .card-holder {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 575px) {
+        .card-holder {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      .scrollable-review{
+        max-height: 150px;
+        overflow-y: auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Review</h1>
+
+    <div class="card-holder">
+      <div class="card">
+        <div class="img-star-holder">
+          <img
+            class="cus-image"
+            src="/assest/icons8-linkedin-50 (2).png"
+            alt="img"
+          />
+
+          <div class="star-holder">
+            <img class="star" src="/assest/png-transparent-rating-review-five-star-rating-five-star-review-feedback-customer-feedback-thumbnail.png" alt="star" />
+            
+          </div>
+        </div>
+
+        <div class="par-holder">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sed
+            rem maiores totam, voluptatem aut quam odio in quia molestiae nisi
+            quod consequatur nulla quos similique! Cumque, officiis. Sit,
+            adipisci. Molestias porro ducimus laudantium alias, perferendis
+            reiciendis placeat excepturi rem nisi eius minus ea accusamus
+            obcaecati consectetur saepe
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-star-holder">
+          <img
+            class="cus-image"
+            src="/assest/icons8-linkedin-50 (2).png"
+            alt="img"
+          />
+
+          <div class="star-holder">
+            <img class="star" src="/assest/png-transparent-rating-review-five-star-rating-five-star-review-feedback-customer-feedback-thumbnail.png" alt="star" />
+            
+          </div>
+        </div>
+
+        <div class="par-holder">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sed
+            rem maiores totam, voluptatem aut quam odio in quia molestiae nisi
+            quod consequatur nulla quos similique! Cumque, officiis. Sit,
+            adipisci. Molestias porro ducimus laudantium alias, perferendis
+            reiciendis placeat excepturi rem nisi eius minus ea accusamus
+            obcaecati consectetur saepe
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-star-holder">
+          <img
+            class="cus-image"
+            src="/assest/icons8-linkedin-50 (2).png"
+            alt="img"
+          />
+
+          <div class="star-holder">
+            <img class="star" src="/assest/png-transparent-rating-review-five-star-rating-five-star-review-feedback-customer-feedback-thumbnail.png" alt="star" />
+            
+          </div>
+        </div>
+
+        <div class="par-holder">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sed
+            rem maiores totam, voluptatem aut quam odio in quia molestiae nisi
+            quod consequatur nulla quos similique! Cumque, officiis. Sit,
+            adipisci. Molestias porro ducimus laudantium alias, perferendis
+            reiciendis placeat excepturi rem nisi eius minus ea accusamus
+            obcaecati consectetur saepe
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="img-star-holder">
+          <img
+            class="cus-image"
+            src="/assest/icons8-linkedin-50 (2).png"
+            alt="img"
+          />
+
+          <div class="star-holder">
+            <img class="star" src="/assest/png-transparent-rating-review-five-star-rating-five-star-review-feedback-customer-feedback-thumbnail.png" alt="star" />
+            
+          </div>
+        </div>
+
+        <div class="par-holder">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sed
+            rem maiores totam, voluptatem aut quam odio in quia molestiae nisi
+            quod consequatur nulla quos similique! Cumque, officiis. Sit,
+            adipisci. Molestias porro ducimus laudantium alias, perferendis
+            reiciendis placeat excepturi rem nisi eius minus ea accusamus
+            obcaecati consectetur saepe
+          </p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="img-star-holder">
+          <img
+            class="cus-image"
+            src="/assest/icons8-linkedin-50 (2).png"
+            alt="img"
+          />
+
+          <div class="star-holder">
+            <img class="star" src="/assest/png-transparent-rating-review-five-star-rating-five-star-review-feedback-customer-feedback-thumbnail.png" alt="star" />
+            
+          </div>
+        </div>
+
+        <div class="par-holder">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sed
+            rem maiores totam, voluptatem aut quam odio in quia molestiae nisi
+            quod consequatur nulla quos similique! Cumque, officiis. Sit,
+            adipisci. Molestias porro ducimus laudantium alias, perferendis
+            reiciendis placeat excepturi rem nisi eius minus ea accusamus
+            obcaecati consectetur saepe
+          </p>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="img-star-holder">
+          <img
+            class="cus-image"
+            src="/assest/icons8-linkedin-50 (2).png"
+            alt="img"
+          />
+
+          <div class="star-holder">
+            <img class="star" src="/assest/png-transparent-rating-review-five-star-rating-five-star-review-feedback-customer-feedback-thumbnail.png" alt="star" />
+            
+          </div>
+        </div>
+
+        <div class="par-holder">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sed
+            rem maiores totam, voluptatem aut quam odio in quia molestiae nisi
+            quod consequatur nulla quos similique! Cumque, officiis. Sit,
+            adipisci. Molestias porro ducimus laudantium alias, perferendis
+            reiciendis placeat excepturi rem nisi eius minus ea accusamus
+            obcaecati consectetur saepe
+          </p>
+        </div>
+      </div>
+  </body>
+</html>
