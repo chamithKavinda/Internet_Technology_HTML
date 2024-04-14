@@ -22,5 +22,9 @@ console.log("fruits 6 : ", fruits[5])
 console.log("Fruits array : " , fruits)
 
 
+fruits[5] = 'avacado'
+console.log("fruits 6 : ", fruits[5])
+console.log("Fruits array : " , fruits)
+
 
 
