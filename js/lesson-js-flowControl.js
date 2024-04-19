@@ -44,3 +44,44 @@ switch (dayOfWeek) {
     console.log("Invalid date");
     break;
 }
+
+
+//===========Loops=========
+
+//1)For Loop
+
+for (let i = 0; i < 5; i++) {}
+
+//2)While loop
+
+let j = 5;
+while (j < 5) {
+j++;
+}
+
+//3) Do while
+
+let k = 6;
+do {
+k++;
+} while (k < 6);
+
+//=========4 Break========
+
+for (let n = 0; n < 5; n++) {
+if (n == 4) {
+break;
+}
+console.log(n);
+}
+
+console.log();
+
+//=========5 Continute========
+
+for (let n = 0; n < 5; n++) {
+if (n == 4) {
+continue;
+}
+console.log(n);
+}
