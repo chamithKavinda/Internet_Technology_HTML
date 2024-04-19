@@ -85,3 +85,22 @@ continue;
 }
 console.log(n);
 }
+  
+  //***********IMPORTANT***********
+  // == Vs ===
+  
+  // ==  -> only check value
+  // === -> not only value is also check the data type as well
+  
+  let num = 5;
+  
+  console.log("==");
+  if (num == 5) {
+    console.log("Hello");
+  }
+  
+  console.log("===");
+  
+  if (num === 5) {
+    console.log("Hello");
+  }
