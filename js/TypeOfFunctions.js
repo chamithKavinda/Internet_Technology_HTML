@@ -44,7 +44,7 @@ function myFunction(CallBack){
     console.log(typeof CallBack)
     if(typeof CallBack === 'function'){}
 
-    if()
+    
    // CallBack()
    // console.log(number)
 }
