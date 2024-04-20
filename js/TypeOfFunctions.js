@@ -72,3 +72,33 @@ secondFunction()
 // }
 
 // console.log(factorial(5))
+
+//converting Named functions to arrow function
+const addNumber = (num1,num2) => num1 + num2
+console.log(addNumber(10,20))
+
+console.log("========================")
+
+//converting constructor functions to arrow functions
+//syntax wise this is possible
+//but Don't do this
+//Not supports this , new when using arrow functions 
+let Student = (name,age,email)=>{
+    this.name=name
+    this.age=age
+    this.email=email
+}
+let Student = new Student("Kamal",38,"Kamal@gmail.com")
+console.log(Student)
+
+//converting callback functions to arrow functions
+let myFunction = CallBack =>{
+    console.log(typeof CallBack)
+    
+    if(typeof CallBack === 'function'){}
+
+   // CallBack()
+   // console.log(number)
+}
+
+
