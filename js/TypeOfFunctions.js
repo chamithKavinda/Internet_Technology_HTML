@@ -49,6 +49,7 @@ function myFunction(CallBack){
    // console.log(number)
 }
 
+//literal funcction
 let person = {
     name: 'kamal',
     age: 40

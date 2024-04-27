@@ -20,10 +20,10 @@ student.age = 20;
 console.log("Student age : " , student.age)
 console.log("Student : ", student )
 
-let student = {}
+let student1 = {}
 
-console.log("Students :",student);
-console.log("Type of student", typeof student);
+console.log("Students :",student1);
+console.log("Type of student", typeof student1);
 
 student={
     firstName: "Kamal",
@@ -44,3 +44,30 @@ student.age = 30;
 
 console.log("Student age: ",student.age);
 console.log("Student age: ", student);
+
+console.log('=================================')
+let person = {
+    name:'kamal',
+    age:20,
+    greet:()=>{
+        console.log('hey')
+    }
+}
+
+console.log(person.greet())
+
+console.log('===================')
+
+//Iterating over properties
+
+for(let key in person){
+    console.log(key + ':' + person[key])
+}
+
+console.log(person.age)
+
+
+
+
+
+
