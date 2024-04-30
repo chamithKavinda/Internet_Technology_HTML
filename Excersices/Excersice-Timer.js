@@ -10,14 +10,26 @@
 
 // }, 2000);
 
+// const intervalId = setInterval(() => {
+
+//       console.log('ABCD');
+
+//     }, 1000);
+
+// console.log('ABCD')
+
+// setTimeout(()=>{
+//     clearInterval(intervalId)
+// },5000)
+
 const intervalId = setInterval(() => {
 
-      console.log('ABCD');
+    console.log('PQRS');
 
-    }, 1000);
+  }, 200);
 
-console.log('ABCD')
+console.log('PQRS')
 
 setTimeout(()=>{
-    clearInterval(intervalId)
+  clearInterval(intervalId)
 },5000)
