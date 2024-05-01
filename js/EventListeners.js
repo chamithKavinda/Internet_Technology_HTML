@@ -1,28 +1,43 @@
-//1.click event
-document.getElementById('btnAdd').addEventListener('click',function(){
-    alert('Added  to cart.....')
-})
+let box = document.getElementById("box");
+console.log(box);
 
-//2.mouserver event
-document.getElementById('box').addEventListener('mouseover',() =>{
-    console.log('mouse over.......')
-})
+box.addEventListener("click", () => {
+  alert("how are you");
+});
 
-//3.mouseout event
-document.getElementById('box').addEventListener('mouseout',() =>{
-    console.log('mouse out.....')
-})
+//Mouse over
 
-//4.keydown event
-let userNamefield = document.getElementById('userName')
-userNamefield.addEventListener('keydown',(event)=>{
-    console.log(event)
-    console.log('keydown..........' + event.jey)
-})
+box.addEventListener("mouseover", () => {
+  console.log("Yooo");
+  box.style.backgroundColor = "red";
+});
 
-//5.KeyUp event
-userNameField.addEventListener('keyUp',() =>{
-    console.log('keyUp..........')
-})
+//Mouse out
 
-//6.submit event
+box.addEventListener("mouseout", () => {
+  box.style.backgroundColor = "green";
+  console.log("Nooo");
+});
+
+//Kerdown event
+
+let userNameField = document.getElementById("userName");
+
+userNameField.addEventListener("keydown", (event) => {
+  console.log(event);
+  console.log("Keycode "+ event.keyCode)
+  console.log("keydown " + event.key);
+});
+
+//KeyUp
+
+userNameField.addEventListener("keyup", (event) => {
+  console.log("keyup " + event.key);
+});
+
+
+//Submit event
+document.getElementById("myForm").addEventListener("submit", (event)=>{
+    event.preventDefault();
+    console.log("Event submited")
+})

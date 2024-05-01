@@ -1,44 +1,60 @@
 let box = document.getElementById('box')
 console.log(box)
 
-//1.inner HTML
+
+//1.innerHTML property
+
 console.log(box.innerHTML)
-box.innerHTML = 'Helloww'
-console.log(box.innerHTML)
 
-//2.textContent - sets for return the content of elements,excluding tags
+box.innerHTML = "<h1>Hello World</h1>";
+console.log(box.innerHTML);
+
+//2. textContent property- sets or return the the text content of an element EXCLUDING any HTML tags
+
 console.log(box.textContent)
-box.textContent = 'kamal perera'
+box.textContent = "Dias Ge Nangi"
 console.log(box.textContent)
 
-//3.innerText
-console.log(box.innerText)
-box.innerText= 'saman'
-console.log(box.innerText)
 
-//4.Applying Styles
-//let img = document.getElementById('img')
-img.style.width = "100px"
-img.style.height = "100px"
+let image = document.getElementById('img')
+console.log(image);
 
-//5.setAttribute - sets the value of 
-//img.setAttribute('src','/assest/gallery 13.jpg')
 
-//6.classList
+image.style.width = "500px";
+image.style.height = "300px";
+
+
+//3. setAttribute sets the value of an attribute
+
+//image.setAttribute('src', '/assets/1.webp')
+
+
+//4.class List
+
 console.log(box.classList)
 box.classList.add('aaa','bbb','ccc')
 
 box.classList.remove('ccc')
-console.log(box.classList)
 
-box.classList.replace('aaa','mmm')
 
-//7.append & appendChild
+box.classList.replace("aaa","mmm")
+
+
+
+//append and append child
+
+
 let parentDiv = document.createElement('div')
 box.append(parentDiv)
 
+
 let childDiv = document.createElement('div')
-childDiv.setAttribute('attr','nav')
-parentDiv.appendChild(childDiv)
+childDiv.setAttribute('attribute', 'new')
+childDiv.appendChild(childDiv)
 
 
+//7. Remove and removeChild
+
+
+parentDiv.removeChild(childDiv)
+parentDiv.remove()
