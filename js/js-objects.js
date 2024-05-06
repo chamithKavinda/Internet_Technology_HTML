@@ -46,6 +46,16 @@ console.log("Student age: ",student.age);
 console.log("Student age: ", student);
 
 console.log('=================================')
+// let person = {
+//     name:'kamal',
+//     age:20,
+//     greet:()=>{
+//         console.log('hey')
+//     }
+// }
+
+// console.log(person.greet())
+
 let person = {
     name:'kamal',
     age:20,
@@ -55,7 +65,6 @@ let person = {
 }
 
 console.log(person.greet())
-
 console.log('===================')
 
 //Iterating over properties
