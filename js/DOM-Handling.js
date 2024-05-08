@@ -57,9 +57,13 @@ let parentDiv1 = document.createElement('div')
 box.append(parentDiv1)
 
 
-let childDiv1 = document.createElement('div')
+let childDiv2 = document.createElement('div')
 childDiv.setAttribute('attribute', 'new')
-childDiv.appendChild(childDiv1)
+childDiv.appendChild(childDiv2)
+
+let childDiv2 = document.createElement('div')
+childDiv.setAttribute('attribute', 'new')
+childDiv.appendChild(childDiv2)
 
 
 //7. Remove and removeChild
